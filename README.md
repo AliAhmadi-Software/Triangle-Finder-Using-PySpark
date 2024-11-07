@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# Triangle Finder Using PySpark
+# Simple Triangle Finder Using PySpark
 
 This project finds triangular relationships in a randomly generated graph using PySpark.
 
@@ -128,17 +127,8 @@ The code effectively generates a random graph of edges, checks for triangular re
 2. Ensure that the required libraries are installed.
 3. Run the code to generate the graph and find triangles.
 
-If you have any questions or need further clarification, feel free to ask!
-=======
-# Triangle Finding Algorithms Using PySpark
+# Triangle Finder Using OTP & ETTP with PySpark
 
-This repository contains implementations of two triangle counting algorithms—One Three Partition (OTP) and Enhanced Two-Tiered Partitioning (ETTP)—using PySpark. The project also includes a random edge generator and utilities for visualizing and understanding the triangle counting process.
-
-## Overview
-
-Triangles are significant structures in graph theory, and counting them is essential in various applications, such as social network analysis and biological networks. This project implements two efficient algorithms to count triangles in large-scale graphs using Apache Spark's distributed computing capabilities.
-
----
 
 ## Article Link
 
