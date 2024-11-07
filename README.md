@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Triangle Finder Using PySpark
 
 This project finds triangular relationships in a randomly generated graph using PySpark.
@@ -128,3 +129,86 @@ The code effectively generates a random graph of edges, checks for triangular re
 3. Run the code to generate the graph and find triangles.
 
 If you have any questions or need further clarification, feel free to ask!
+=======
+# Triangle Finding Algorithms Using PySpark
+
+This repository contains implementations of two triangle counting algorithms—One Three Partition (OTP) and Enhanced Two-Tiered Partitioning (ETTP)—using PySpark. The project also includes a random edge generator and utilities for visualizing and understanding the triangle counting process.
+
+## Overview
+
+Triangles are significant structures in graph theory, and counting them is essential in various applications, such as social network analysis and biological networks. This project implements two efficient algorithms to count triangles in large-scale graphs using Apache Spark's distributed computing capabilities.
+
+## Algorithms
+
+### 1. One Three Partition (OTP) Algorithm
+
+The OTP algorithm partitions the graph into sub-graphs and counts triangles within those partitions. It distinguishes between three types of triangles based on their partitioning:
+- **Type-1**: All three vertices of the triangle are in the same partition.
+- **Type-2**: Two vertices are in the same partition, and the third vertex is in a different partition.
+- **Type-3**: All three vertices are in different partitions.
+
+#### Implementation Details
+
+- The graph is represented using a list of edges, which is generated randomly for testing purposes.
+- The edges are mapped to their corresponding partitions based on their vertex values.
+- The triangles are counted by examining the neighbors of each edge in the partitions.
+
+#### Code Overview
+```python
+# Code to implement the OTP algorithm
+# (Code snippet as provided in previous implementations)
+```
+
+### 2. Enhanced Two-Tiered Partitioning (ETTP) Algorithm
+
+The ETTP algorithm enhances the OTP by introducing a two-tiered partitioning mechanism to improve performance when counting triangles. This allows for a more efficient triangle detection process by reducing the number of comparisons needed.
+
+#### Implementation Details
+
+- Similar to OTP, the ETTP algorithm first partitions the graph into two layers.
+- It counts triangles based on different types of edges—those within the same partition and those across partitions.
+
+#### Code Overview
+```python
+# Code to implement the ETTP algorithm
+# (Code snippet as provided in previous implementations)
+```
+
+## Comparison of Algorithms
+
+The article compares the OTP and ETTP algorithms in terms of performance and efficiency. Here are the key findings:
+
+- **Execution Time**: The ETTP algorithm typically demonstrates a lower execution time than the OTP algorithm for larger datasets due to its enhanced partitioning strategy. The two-tiered approach reduces the number of triangle checks needed.
+  
+- **Triangle Counting Accuracy**: Both algorithms yield accurate triangle counts, but the ETTP's method of handling partitions allows it to capture a more comprehensive view of triangles that might be missed by OTP in certain configurations.
+
+- **Scalability**: ETTP is shown to scale better with larger datasets, making it a preferred choice when working with extensive graphs.
+
+### Results Summary
+
+- **OTP Performance**: Generally effective for smaller datasets, but may struggle with execution time and efficiency as graph size increases.
+- **ETTP Performance**: Offers improved speed and scalability, making it more suitable for large-scale graph analysis.
+
+## Running the Algorithms
+
+1. **Dependencies**: Ensure you have Python and PySpark installed. You can install PySpark via pip:
+    ```bash
+    pip install pyspark
+    ```
+
+2. **Running in Google Colab**: The implementations are suitable for execution in Google Colab. Upload the required CSV files or generate them using the provided code snippets.
+
+3. **Execution**: Each algorithm can be run in its respective Jupyter notebook. The output will display the triangles found in the graph, providing insights into the connectivity of the nodes.
+
+## Example Input
+- Random edges are generated and saved into a CSV file, which is then read by the algorithms to find triangles.
+
+## Output
+- The output for both algorithms includes the sets of vertices forming triangles, printed to the console for review.
+
+## Conclusion
+
+This project provides an efficient framework for counting triangles in large graphs using Spark. The implementation of both OTP and ETTP algorithms demonstrates the versatility of Spark for graph processing tasks. Users can adapt and extend these algorithms for more complex applications in network analysis.
+
+If you have any questions or need further clarification, feel free to reach out!
+>>>>>>> d2525ea (Add OTP & ETTP Algorithm Base On Article)
