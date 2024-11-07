@@ -138,6 +138,14 @@ This repository contains implementations of two triangle counting algorithms—O
 
 Triangles are significant structures in graph theory, and counting them is essential in various applications, such as social network analysis and biological networks. This project implements two efficient algorithms to count triangles in large-scale graphs using Apache Spark's distributed computing capabilities.
 
+---
+
+## Article Link
+
+[📄 Graph partitioning MapReduce-based algorithms for counting triangles in large-scale graphs](https://pmc.ncbi.nlm.nih.gov/articles/PMC9813377/)
+
+
+
 ## Algorithms
 
 ### 1. One Three Partition (OTP) Algorithm
