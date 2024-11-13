@@ -209,4 +209,3 @@ The article compares the OTP and ETTP algorithms in terms of performance and eff
 This project provides an efficient framework for counting triangles in large graphs using Spark. The implementation of both OTP and ETTP algorithms demonstrates the versatility of Spark for graph processing tasks. Users can adapt and extend these algorithms for more complex applications in network analysis.
 
 If you have any questions or need further clarification, feel free to reach out!
->>>>>>> d2525ea (Add OTP & ETTP Algorithm Base On Article)
