@@ -151,12 +151,6 @@ The OTP algorithm partitions the graph into sub-graphs and counts triangles with
 - The edges are mapped to their corresponding partitions based on their vertex values.
 - The triangles are counted by examining the neighbors of each edge in the partitions.
 
-#### Code Overview
-```python
-# Code to implement the OTP algorithm
-# (Code snippet as provided in previous implementations)
-```
-
 ### 2. Enhanced Two-Tiered Partitioning (ETTP) Algorithm
 
 The ETTP algorithm enhances the OTP by introducing a two-tiered partitioning mechanism to improve performance when counting triangles. This allows for a more efficient triangle detection process by reducing the number of comparisons needed.
@@ -165,12 +159,6 @@ The ETTP algorithm enhances the OTP by introducing a two-tiered partitioning mec
 
 - Similar to OTP, the ETTP algorithm first partitions the graph into two layers.
 - It counts triangles based on different types of edges—those within the same partition and those across partitions.
-
-#### Code Overview
-```python
-# Code to implement the ETTP algorithm
-# (Code snippet as provided in previous implementations)
-```
 
 ## Comparison of Algorithms
 
